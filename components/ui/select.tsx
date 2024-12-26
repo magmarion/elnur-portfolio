@@ -4,6 +4,8 @@ import * as React from "react"
 import * as SelectPrimitive from "@radix-ui/react-select"
 import { Check, ChevronDown, ChevronUp } from "lucide-react"
 
+/* this import requiered me to add a lib folder with a utils.ts file inside and inside this 
+I defined the cn function. The cn utility is commonly used for class name manipulation:*/
 import { cn } from "@/lib/utils"
 
 const Select = SelectPrimitive.Root
