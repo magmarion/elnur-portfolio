@@ -13,7 +13,7 @@ const PageTransition: React.FC<{ children: React.ReactNode }> = ({ children }) =
                     animate={{
                         opacity: 0,
                         transition: {
-                            delay: 1,
+                            delay: 0.9,
                             duration: 0.4,
                             ease: "easeInOut"
                         },
