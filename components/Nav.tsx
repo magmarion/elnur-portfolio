@@ -16,12 +16,12 @@ const links = [
       path: "/about",
    },
    {
-      name: "Contact",
-      path: "/contact",
+      name: "Projects",
+      path: "/my-projects",
    },
    {
-      name: "Projects",
-      path: "/projects",
+      name: "Contact",
+      path: "/contact",
    },
 ]
 
@@ -44,4 +44,4 @@ const Nav = () => {
    );
 };
 
-export default Nav
+export default Nav;
