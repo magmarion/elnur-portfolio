@@ -1,10 +1,7 @@
 "use client"
 
-import { link } from "fs";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import path from "path";
-
 
 const links = [
    {
