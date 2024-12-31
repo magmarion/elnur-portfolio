@@ -44,9 +44,10 @@ const Photo = () => {
                     viewBox="0 0 506 506"
                     xmlns="http://www.w3.org/2000/svg"
                 >
-                    <motion.circle cx="253"
+                    <motion.circle
+                        cx="253"
                         cy="253"
-                        r="253"
+                        r="250"
                         stroke="#00ff99"
                         strokeWidth="4"
                         strokeLinecap="round"
