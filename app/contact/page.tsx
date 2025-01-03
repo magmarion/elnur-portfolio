@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Select, SelectContent, SelectItem, SelectGroup, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import { title } from "process";
 
@@ -50,11 +50,27 @@ const Contact = () => {
                         </p>
                         {/* input */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <Input type="firstname" placeholder="First name" />
+                            <Input type="firstname" placeholder="first name" />
                             <Input type="lastname" placeholder="Last name" />
                             <Input type="email" placeholder="Email" />
                             <Input type="phone" placeholder="Phone" />
                         </div>
+                        {/* select */}
+                        <Select>
+                            <SelectTrigger className="w-full">
+                                <SelectValue placeholder="Select a service" />
+                            </SelectTrigger>
+                            <SelectContent>
+                                <SelectGroup>
+                                    <SelectLabel>Select a service</SelectLabel>
+                                    <SelectItem value="web-development">Web Development</SelectItem>
+                                    <SelectItem value="ui-ux">UI/UX Design</SelectItem>
+                                    <SelectItem value="logo">Logo Design</SelectItem>
+                                </SelectGroup>
+                            </SelectContent>
+                        </Select>
+                        {/* text area */}
+                        <Textarea className="h-[200px]" placeholder="Your message" />
                     </form>
                 </div>
                 {/* info */}
