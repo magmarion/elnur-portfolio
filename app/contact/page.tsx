@@ -6,7 +6,6 @@ import { Textarea } from "@/components/ui/textarea";
 
 import { Select, SelectContent, SelectItem, SelectGroup, SelectLabel, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
-import { title } from "process";
 
 const info = [
     {
@@ -20,7 +19,7 @@ const info = [
         description: "myemail@gmail.com",
     },
     {
-        icon: <FaPhoneAlt />,
+        icon: <FaMapMarkerAlt />,
         title: "Address",
         description: "Kod Torget 9, Tech City 123 45",
     },
@@ -44,9 +43,10 @@ const Contact = () => {
                     <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
                         <h3 className="text-4xl text-accent">Let's work together</h3>
                         <p className="text-white/60">
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                            Obcaecati, ut error molestias expedita laborum veritatis a reprehenderit perspiciatis exercitationem praesentium dignissimos.
-                            Illum nam magnam quibusdam perferendis dignissimos voluptate nihil optio.
+                            I'm a passionate front-end developer with experience in creating visually appealing,
+                            responsive, and user-friendly websites. Whether you need a simple landing page or a full-fledged web application,
+                            I'm here to help turn your ideas into reality.
+                            I work closely with clients to ensure that the final product meets your business goals and user needs..
                         </p>
                         {/* input */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
