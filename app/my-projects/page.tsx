@@ -19,19 +19,26 @@ const projects = [
     {
         num: "01",
         category: "Frontend",
-        title: "Project 1",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.",
+        description: "A sleek and minimalist website designed with responsive HTML5 and CSS3, ensuring a seamless user experience across all devices.",
         stack: [{ name: "Html 5" }, { name: "Css 3" }],
-        image: "/",
+        image: "/assets/projectDemo/Frame1.png",
+        github: "https://github.com/elnurguliy/html-css-website.git",
+        live: "https://elnurguliy.github.io/html-css-website/",
+    },
+    {
+        num: "02",
+        category: "UX/UI",
+        description: "The objective of this project was to redesign an existing website with a focus on enhancing its accessibility.",
+        stack: [{ name: "Figma" }, { name: "Lighthouse" }, { name: "Wcag" }],
+        image: "/assets/projectDemo/Frame2.png",
         github: "",
         live: "",
     },
     {
-        num: "02",
+        num: "03",
         category: "Frontend",
-        title: "Project 2",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.",
-        stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
+        stack: [{ name: "Html 5" }, { name: "Css/Sass" }, { name: "JavaScript" }],
         image: "/",
         github: "",
         live: "",
@@ -39,7 +46,6 @@ const projects = [
     {
         num: "03",
         category: "Frontend",
-        title: "Project 3",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.",
         stack: [{ name: "Next.js" }, { name: "TypeScript" }, { name: "Tailwind CSS" }, { name: "Node.js" }],
         image: "/",
@@ -140,7 +146,7 @@ const Project = () => {
                             {projects.map((project, index) => {
                                 return (
                                     <SwiperSlide key={index} className="w-full">
-                                        <div className="h-[460px] relative group flex justify-center
+                                        <div className="h-[460px] rounded-md relative group flex justify-center
                                         items-center bg-pink-50/20 ">
                                             {/* overlay */}
                                             <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
@@ -150,7 +156,6 @@ const Project = () => {
                                                     src={project.image}
                                                     fill
                                                     alt=""
-                                                    className="object-cover"
                                                 />
                                             </div>
                                         </div>
