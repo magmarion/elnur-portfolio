@@ -19,7 +19,7 @@ const config: Config = {
       xl: "1200px",
     },
     fontFamily: {
-      primary: "--font-geist-sans",
+      primary: "var(--font-jetbrainsMono)",
     },
     extend: {
       colors: {
