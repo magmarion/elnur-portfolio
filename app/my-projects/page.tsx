@@ -36,21 +36,14 @@ const projects = [
     },
     {
         num: "03",
-        category: "Frontend",
-        description: "Redesigned a website for improved accessibility, usability, and responsiveness with dynamic features enhancing user experience.",
-        stack: [{ name: "Html 5" }, { name: "Css/Sass" }, { name: "JavaScript" }],
-        image: "/",
-        github: "",
-        demo: "",
-    },
-    {
-        num: "03",
-        category: "Frontend",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.",
-        stack: [{ name: "Next.js" }, { name: "TypeScript" }, { name: "Tailwind CSS" }, { name: "Node.js" }],
-        image: "/",
-        github: "",
-        demo: "",
+        category: "Game",
+        description: `A text-based adventure game where players explore a cave, interact with characters and objects,
+                    and search for a legendary treasure. The game includes an inventory system, dynamic scenes, 
+                    and multiple endings based on player decisions.`,
+        stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
+        image: "/assets/projectDemo/Frame3.png",
+        github: "https://github.com/elnurguliy/FirstGame",
+        demo: "https://elnurguliy.github.io/FirstGame/",
     },
 ]
 
@@ -143,7 +136,7 @@ const Project = () => {
                                         <BsGithub className="text-gray-500 text-3xl" />
                                     </div>
                                 )}
-                                
+
                             </div>
                         </div>
                     </div>
@@ -167,6 +160,7 @@ const Project = () => {
                                                     src={project.image}
                                                     fill
                                                     alt=""
+                                                    className="object-cover"
                                                 />
                                             </div>
                                         </div>
