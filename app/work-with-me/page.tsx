@@ -34,8 +34,8 @@ const WorkWithMe = () => {
 
                 {/* Call to Action Section */}
                 <div className="text-center mt-8">
-                    <p className="text-xl font-extrabold mb-4">Ready to start your project?</p>
-                    <Button className="hover:animate-pulse">
+                    <p className="text-xl text-white/60 font-extrabold mb-4 animate-pulse">Ready to start your project?</p>
+                    <Button className="hover:animate-bounce">
                         <Link href="/contact">
                             Collaborate
                         </Link>

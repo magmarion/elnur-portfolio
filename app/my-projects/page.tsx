@@ -23,7 +23,7 @@ const projects = [
         stack: [{ name: "Html 5" }, { name: "Css 3" }],
         image: "/assets/projectDemo/Frame1.png",
         github: "https://github.com/elnurguliy/html-css-website.git",
-        live: "https://elnurguliy.github.io/html-css-website/",
+        demo: "https://elnurguliy.github.io/html-css-website/",
     },
     {
         num: "02",
@@ -31,17 +31,17 @@ const projects = [
         description: "The objective of this project was to redesign an existing website with a focus on enhancing its accessibility.",
         stack: [{ name: "Figma" }, { name: "Lighthouse" }, { name: "Wcag" }],
         image: "/assets/projectDemo/Frame2.png",
-        github: "",
-        live: "",
+        github: null,
+        demo: "https://www.figma.com/proto/bHFqC4WRSE4Nospg5A7mVd/Bokus?node-id=177-686&p=f&t=kqq3op6OyOabOhVU-0&scaling=scale-down&content-scaling=fixed&page-id=176%3A12&starting-point-node-id=177%3A686",
     },
     {
         num: "03",
         category: "Frontend",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.",
+        description: "Redesigned a website for improved accessibility, usability, and responsiveness with dynamic features enhancing user experience.",
         stack: [{ name: "Html 5" }, { name: "Css/Sass" }, { name: "JavaScript" }],
         image: "/",
         github: "",
-        live: "",
+        demo: "",
     },
     {
         num: "03",
@@ -50,7 +50,7 @@ const projects = [
         stack: [{ name: "Next.js" }, { name: "TypeScript" }, { name: "Tailwind CSS" }, { name: "Node.js" }],
         image: "/",
         github: "",
-        live: "",
+        demo: "",
     },
 ]
 
@@ -106,7 +106,7 @@ const Project = () => {
                             {/* buttons */}
                             <div className="flex items-center gap-4">
                                 {/* live project button */}
-                                <Link href={project.live}>
+                                <Link href={project.demo} target="_blank">
                                     <TooltipProvider delayDuration={100}>
                                         <Tooltip>
                                             <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5
@@ -114,25 +114,36 @@ const Project = () => {
                                                 <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                                             </TooltipTrigger>
                                             <TooltipContent>
-                                                <p>Live Project</p>
+                                                <p>Demo project</p>
                                             </TooltipContent>
                                         </Tooltip>
                                     </TooltipProvider>
                                 </Link>
+
                                 {/* github project button */}
-                                <Link href={project.github}>
-                                    <TooltipProvider delayDuration={100}>
-                                        <Tooltip>
-                                            <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5
+                                {/* Conditional Rendering: The Link component is only rendered if project.github contains a valid URL. If project.github is null, we render a placeholder div instead.
+                                    Fallback Element: If project.github is null, we display a gray icon inside a div, which acts as a disabled button and prevents any errors from being thrown.
+                                    No Error: Since we only pass a valid URL to the href attribute, the TypeScript error is avoided. */}
+                                {project.github ? (
+                                    < Link href={project.github} target="_blank">
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                                <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5
                                             flex justify-center items-center group">
-                                                <BsGithub className="text-white text-3xl group-hover:text-accent" />
-                                            </TooltipTrigger>
-                                            <TooltipContent>
-                                                <p>Github repository</p>
-                                            </TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
-                                </Link>
+                                                    <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                                                </TooltipTrigger>
+                                                <TooltipContent>
+                                                    <p>Github repository</p>
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
+                                    </Link>
+                                ) : (
+                                    <div className="w-[70px] h-[70px] rounded-full bg-gray-700 flex justify-center items-center">
+                                        <BsGithub className="text-gray-500 text-3xl" />
+                                    </div>
+                                )}
+                                
                             </div>
                         </div>
                     </div>
@@ -173,7 +184,7 @@ const Project = () => {
                     </div>
                 </div>
             </div>
-        </motion.section>
+        </motion.section >
     );
 };
 
