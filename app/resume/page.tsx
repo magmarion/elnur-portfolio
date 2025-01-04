@@ -1,7 +1,7 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs } from "react-icons/si";
+import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaNpm, FaGitAlt, FaGithub } from "react-icons/fa";
+import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
 
 // about data
 const about = {
@@ -23,7 +23,7 @@ const about = {
         },
         {
             filedName: "Experience",
-            fieldvalue: "10+ Years",
+            fieldvalue: "1+ Years",
         },
         {
             filedName: "Nationality",
@@ -45,32 +45,32 @@ const experience = {
     icon: "/",
     title: "My experience",
     description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.",
+        "Collaborated with cross-functional teams on various projects, successfully launching responsive websites and applications that meet user needs and business goals.",
     items: [
         {
-            company: "It Tech",
-            position: "Front-end Developer",
-            duration: "2020 - present",
+            company: "Volvo Cars",
+            position: "Operator",
+            duration: "2019 - present",
         },
         {
-            company: "Web Tech",
-            position: "Web Developer",
-            duration: "2019 - 2020",
+            company: "BK Häcken/Gothia Cup",
+            position: "Team Leader",
+            duration: "2023",
         },
         {
-            company: "Sigma IT",
-            position: "Intern",
-            duration: "2018 - 2019",
+            company: "BK Häcken/Gothia Cup",
+            position: "Official",
+            duration: "2022",
         },
         {
-            company: "Volvo AB",
-            position: "Intern",
-            duration: "2017 - 2018",
+            company: "4-gott AB",
+            position: "Salesperson",
+            duration: "2018",
         },
         {
-            company: "Zenseact AB",
-            position: "UX/UI Designer",
-            duration: "2015 - 2017",
+            company: "Johnssens Konditori",
+            position: "Package Handler",
+            duration: "2017",
         },
     ],
 };
@@ -80,7 +80,9 @@ const education = {
     icon: "/",
     title: "My education",
     description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.",
+        `I am currently pursuing a degree in Front-End Development and Web Programming at Medieinstitutet.
+        Prior to this, I undertook one year of study in Information Technology at Jönköping University and
+        completed my high school education with a focus on IT at the International IT College of Sweden.`,
     items: [
         {
             institution: "Medieinstitutet",
@@ -110,7 +112,8 @@ const education = {
 const skills = {
     title: "My skills",
     description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.",
+        `Skilled in web development with expertise in HTML, CSS, JavaScript, and front-end frameworks.
+        Continuously improving in software development and UI/UX design`,
     skillList: [
         {
             icon: <FaHtml5 />,
@@ -125,6 +128,10 @@ const skills = {
         {
             icon: <FaJs />,
             name: "JavaSript",
+        },
+        {
+            icon: <SiTypescript />,
+            name: "TypeSript",
         },
 
         {
@@ -147,6 +154,18 @@ const skills = {
         {
             icon: <FaNodeJs />,
             name: "Node.js",
+        },
+        {
+            icon: <FaNpm />,
+            name: "npm",
+        },
+        {
+            icon: <FaGitAlt />,
+            name: "Git",
+        },
+        {
+            icon: <FaGithub />,
+            name: "GitHub",
         },
     ],
 };

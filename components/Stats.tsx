@@ -12,11 +12,11 @@ const stats = [
         text: "Projects Involved"
     },
     {
-        num: 10,
+        num: 12,
         text: "Techonologies Used"
     },
     {
-        num: 170,
+        num: 220,
         text: "Code Commits"
     },
 ];
