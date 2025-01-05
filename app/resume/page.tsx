@@ -7,7 +7,7 @@ import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
 const about = {
     title: "About Me",
     description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.",
+        "Feel free to reach out for collaboration or inquiries. Below are my contact details.",
     info: [
         {
             filedName: "Name",
@@ -315,7 +315,7 @@ const Resume = () => {
                                                 className="flex items-center justify-center xl:justify-start gap-4"
                                             >
                                                 <span className="text-white/60">{item.filedName}</span>
-                                                <span className="text-xl">{item.fieldvalue}</span>
+                                                <span className="text-md">{item.fieldvalue}</span>
                                             </li>
                                         );
                                     })}

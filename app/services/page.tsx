@@ -7,25 +7,25 @@ const services = [
     {
         num: "01",
         title: "Web Development",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.",
+        description: "Building responsive, fast, and reliable websites tailored to your needs.",
         href: ""
     },
     {
         num: "02",
         title: "UI/UX Design",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.",
+        description: "Designing user-friendly interfaces that enhance user experiences.",
         href: ""
     },
     {
         num: "03",
         title: "Logo Design",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.",
+        description: "LCreating unique and memorable logos that represent your brand identity.",
         href: ""
     },
     {
         num: "04",
         title: "Accessibility Analysis",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, quos.",
+        description: "Ensuring your website is accessible to all users, meeting modern standards.",
         href: ""
     },
 ];
