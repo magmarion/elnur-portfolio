@@ -6,31 +6,43 @@ import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
+
+import { SiZcool } from "react-icons/si";
+import { AiFillHome } from "react-icons/ai";
+import { FaLaptopCode, FaFileAlt, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
+
 // installed hamburger menu icon from react-icons using "npm i react-icons"
 import { CiMenuFries } from "react-icons/ci";
 
 const links = [
     {
-        name: "Home",
-        path: "/",
+       name: "Home",
+       path: "/",
+       icon: <AiFillHome />,
     },
     {
-        name: "Services",
-        path: "/services",
+       name: "Services",
+       path: "/services",
+       icon: <FaLaptopCode />,
+       
     },
     {
-        name: "Resume",
-        path: "/resume",
+       name: "Resume",
+       path: "/resume",
+       icon: <FaFileAlt />,
     },
     {
-        name: "Projects",
-        path: "/my-projects",
+       name: "Projects",
+       path: "/my-projects",
+       icon: <FaProjectDiagram />,
     },
     {
-        name: "Contact",
-        path: "/contact",
+       name: "Contact",
+       path: "/contact",
+       icon: <FaEnvelope />,
     },
-];
+ ];
+ 
 
 const MobileNav = () => {
     const pathname = usePathname();
@@ -55,8 +67,8 @@ const MobileNav = () => {
                         e.preventDefault();
                         toggleMenu()
                     }}>
-                        <h1 className="text-4xl font-semibold">
-                            Elnur<span className="text-accent">.</span>
+                        <h1 className="text-4xl font-semibold flex justify-center gap-2">
+                            Elnur {<SiZcool className="text-accent pb-1" />}
                         </h1>
                     </Link>
                 </div>
@@ -69,8 +81,9 @@ const MobileNav = () => {
                                 key={index}
                                 onClick={toggleMenu}
                                 className={`${link.path === pathname && "text-accent border-b-2 border-accent"
-                                    } text-xl capitalize hover:text-accent transition-all`}
+                                    } text-xl capitalize hover:text-accent transition-all flex items-center gap-2`}
                             >
+                                {link.icon}
                                 {link.name}
                             </Link>
                         );

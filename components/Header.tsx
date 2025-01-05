@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
+import { SiZcool } from "react-icons/si";
+
 
 
 import Nav from "./Nav";
@@ -10,8 +12,8 @@ const Header = () => {
             <div className="container mx-auto flex justify-between items-center">
                 {/* Logo */}
                 <Link href="/">
-                    <h1 className="text-4xl font-semibold">
-                        Elnur<span className="text-accent">.</span></h1>
+                    <h1 className="text-4xl font-semibold flex items-center gap-2">
+                        Elnur {<SiZcool className="text-accent pb-1" />} </h1>
                 </Link>
 
                 {/* desktop nav and hire me button */}
