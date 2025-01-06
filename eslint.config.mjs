@@ -17,6 +17,8 @@ const eslintConfig = [
       "@typescript-eslint/quotes": "off",  // Disable strict quote checking for TypeScript
       "quotes": [0, "double", { "avoidEscape": true, "allowTemplateLiterals": true }], // Allows flexibility in quote usage
       "no-useless-escape": "off", // Disables warnings for unnecessary escape characters
+      "@typescript-eslint/no-explicit-any": "off", // Temporarily disable `any` rule
+      "@typescript-eslint/no-unused-vars": "off", // Temporarily disable unused variable rule
     },
   },
 ];

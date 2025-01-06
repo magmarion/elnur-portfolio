@@ -1,7 +1,6 @@
 "use client";
-import { animate, motion } from "framer-motion";
-import { init } from "next/dist/compiled/webpack/webpack";
-import { exit } from "process";
+
+import { motion } from "framer-motion";
 
 const stairAnimation = {
     initial: {

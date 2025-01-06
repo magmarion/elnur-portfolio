@@ -1,6 +1,6 @@
 
-import { Button } from "@/components/ui/button";
-import { FiDownload } from "react-icons/fi";
+// import { Button } from "@/components/ui/button";
+// import { FiDownload } from "react-icons/fi";
 
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
