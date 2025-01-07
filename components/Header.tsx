@@ -1,7 +1,6 @@
 import Link from "next/link";
 import { Button } from "./ui/button";
-import { SiZcool } from "react-icons/si";
-
+import { GiTigerHead } from "react-icons/gi";
 
 
 import Nav from "./Nav";
@@ -13,7 +12,7 @@ const Header = () => {
                 {/* Logo */}
                 <Link href="/">
                     <h1 className="text-4xl font-semibold flex items-center gap-2">
-                        Elnur {<SiZcool className="text-accent pb-1" />} </h1>
+                        Elnur {<GiTigerHead className="text-accent pb-1" />} </h1>
                 </Link>
 
                 {/* desktop nav and hire me button */}
