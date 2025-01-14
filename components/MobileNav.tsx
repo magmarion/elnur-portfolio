@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
 
-import { SiZcool } from "react-icons/si";
+import { GiTigerHead } from "react-icons/gi";
 import { AiFillHome } from "react-icons/ai";
 import { FaLaptopCode, FaFileAlt, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
 
@@ -68,7 +68,7 @@ const MobileNav = () => {
                         toggleMenu()
                     }}>
                         <h1 className="text-4xl font-semibold flex justify-center gap-2">
-                            Elnur {<SiZcool className="text-accent pb-1" />}
+                            Elnur {<GiTigerHead className="text-accent pb-1" />}
                         </h1>
                     </Link>
                 </div>

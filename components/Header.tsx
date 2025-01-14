@@ -5,6 +5,7 @@ import { GiTigerHead } from "react-icons/gi";
 
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
+import Photo from "./Photo";
 const Header = () => {
     return (
         <header className="py-8 xl:py-12 text-white">
@@ -18,9 +19,11 @@ const Header = () => {
                 {/* desktop nav and hire me button */}
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav />
-                    <Link href="/work-with-me">
-                        <Button className="ml-6">Work With Me</Button>
-                    </Link>
+                    <div className="ml-6">
+                        <Photo />
+
+                    </div>
+                    {/* <Button className="ml-6">Work With Me</Button> */}
                 </div>
 
                 {/* mobile nav */}
