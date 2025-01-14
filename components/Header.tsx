@@ -1,7 +1,5 @@
 import Link from "next/link";
-import { Button } from "./ui/button";
-import { GiTigerHead } from "react-icons/gi";
-
+// import { Button } from "./ui/button";
 
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
@@ -13,16 +11,12 @@ const Header = () => {
                 {/* Logo */}
                 <Link href="/">
                     <h1 className="text-4xl font-semibold flex items-center gap-2">
-                        Elnur {<GiTigerHead className="text-accent pb-1" />} </h1>
+                        Elnur <Photo /> </h1>
                 </Link>
 
                 {/* desktop nav and hire me button */}
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav />
-                    <div className="ml-6">
-                        <Photo />
-
-                    </div>
                     {/* <Button className="ml-6">Work With Me</Button> */}
                 </div>
 

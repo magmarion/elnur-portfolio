@@ -1,10 +1,9 @@
 
 // import { Button } from "@/components/ui/button";
 // import { FiDownload } from "react-icons/fi";
-
 import Social from "@/components/Social";
-import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import { GiTigerHead } from "react-icons/gi";
 
 const Home = () => {
     return (
@@ -46,9 +45,11 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    {/* photo */}
-                    <div className="order-1 xl:order-none mb-8 xl:mb-0">
-                        <Photo />
+                    <div
+                        className="w-[120px] h-[120px] xl:w-[350px] xl:h-[350px]
+                        relative bottom-10 xl:bottom-auto xl:right-24 flex justify-center items-center"
+                    >
+                        <GiTigerHead className="w-full h-full text-accent" />
                     </div>
                 </div>
             </div>
