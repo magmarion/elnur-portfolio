@@ -1,9 +1,16 @@
 
 // import { Button } from "@/components/ui/button";
 // import { FiDownload } from "react-icons/fi";
+
+// import { GiTigerHead } from "react-icons/gi";
+// import { FaWolfPackBattalion } from "react-icons/fa";
+// import { SiCodingninjas } from "react-icons/si";
+
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
-import { GiTigerHead } from "react-icons/gi";
+
+import SpinningIcons from "@/components/SpinningIcons";
+
 
 const Home = () => {
     return (
@@ -45,11 +52,15 @@ const Home = () => {
                             </div>
                         </div>
                     </div>
-                    <div
+                    {/* <div
                         className="w-[120px] h-[120px] xl:w-[350px] xl:h-[350px]
                         relative bottom-10 xl:bottom-auto xl:right-24 flex justify-center items-center"
                     >
-                        <GiTigerHead className="w-full h-full text-accent" />
+                        <SiCodingninjas className="w-full h-full text-accent" />
+                    </div> */}
+
+                    <div className="relative bottom-10 xl:bottom-auto xl:right-32 flex justify-center items-center">
+                        <SpinningIcons />
                     </div>
                 </div>
             </div>
