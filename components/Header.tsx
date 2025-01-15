@@ -13,9 +13,8 @@ const Header = () => {
                 {/* Logo */}
                 <Link href="/">
                     <h1 className="text-4xl font-semibold flex items-center gap-2">
-                        Elnur. <span> <FaGlideG className="text-accent ml-[-10px] mt-2" /> </span> <Photo /> </h1>
+                        Elnur.<span> <FaGlideG className="text-accent ml-[-10px] mt-2" /> </span> <Photo /> </h1>
                 </Link>
-
                 {/* desktop nav and hire me button */}
                 <div className="hidden xl:flex items-center gap-8">
                     <Nav />

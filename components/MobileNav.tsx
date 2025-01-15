@@ -1,11 +1,11 @@
 "use client";
 
 // Components to build a mobile navigation menu
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import Link from "next/link";
+import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 
 import { usePathname } from "next/navigation";
 import { useState } from "react";
-import Link from "next/link";
 
 import { FaGlideG } from "react-icons/fa";
 import { AiFillHome } from "react-icons/ai";
@@ -16,33 +16,32 @@ import { CiMenuFries } from "react-icons/ci";
 
 const links = [
     {
-       name: "Home",
-       path: "/",
-       icon: <AiFillHome />,
+        name: "Home",
+        path: "/",
+        icon: <AiFillHome />,
     },
     {
-       name: "Services",
-       path: "/services",
-       icon: <FaLaptopCode />,
-       
+        name: "Services",
+        path: "/services",
+        icon: <FaLaptopCode />,
+
     },
     {
-       name: "Resume",
-       path: "/resume",
-       icon: <FaFileAlt />,
+        name: "Resume",
+        path: "/resume",
+        icon: <FaFileAlt />,
     },
     {
-       name: "Projects",
-       path: "/my-projects",
-       icon: <FaProjectDiagram />,
+        name: "Projects",
+        path: "/my-projects",
+        icon: <FaProjectDiagram />,
     },
     {
-       name: "Contact",
-       path: "/contact",
-       icon: <FaEnvelope />,
+        name: "Contact",
+        path: "/contact",
+        icon: <FaEnvelope />,
     },
- ];
- 
+];
 
 const MobileNav = () => {
     const pathname = usePathname();
@@ -59,6 +58,7 @@ const MobileNav = () => {
                 <CiMenuFries className="text-[32px] text-accent" />
             </SheetTrigger>
             <SheetContent className="flex flex-col">
+                <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
 
                 <div className="mt-20 mb-20 text-center text-2xl">
                     {/* by using preventDefault(), the menu will be closed when the logo is clicked, 

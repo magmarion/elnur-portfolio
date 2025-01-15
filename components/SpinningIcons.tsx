@@ -11,11 +11,11 @@ const icons = [
     { icon: <FaJs className="text-yellow-500 text-3xl" />, position: 2 },
     { icon: <FaReact className="text-blue-400 text-3xl" />, position: 3 },
     { icon: <FaNodeJs className="text-green-500 text-3xl" />, position: 4 },
-    { icon: <FaGithub className="text-black text-3xl" />, position: 5 },
-    { icon: <FaGitAlt className="text-gray-800 text-3xl" />, position: 6 },
-    { icon: <SiTypescript className="text-blue-600 text-3xl" />, position: 7 },
+    { icon: <FaGithub className="text-white text-3xl" />, position: 5 },
+    { icon: <FaGitAlt className="text-white text-3xl" />, position: 6 },
+    { icon: <SiTypescript className="text-blue-500 text-3xl" />, position: 7 },
     { icon: <SiTailwindcss className="text-sky-400 text-3xl" />, position: 8 },
-    { icon: <SiNextdotjs className="text-black text-3xl" />, position: 9 },
+    { icon: <SiNextdotjs className="text-white text-3xl" />, position: 9 },
     { icon: <FaFigma className="text-purple-600 text-3xl" />, position: 10 },
     { icon: <FaNpm className="text-orange-500 text-3xl" />, position: 11 }
 ];
