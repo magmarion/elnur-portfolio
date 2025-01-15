@@ -31,7 +31,7 @@ const about = {
         },
         {
             filedName: "Languages",
-            fieldvalue: "Azerbaijan, Turkish, English, Swedish",
+            fieldvalue: "Azerbaijani, Turkish, English, Swedish",
         },
         {
             filedName: "Freelance",
@@ -169,7 +169,6 @@ const skills = {
         },
     ],
 };
-
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
@@ -312,10 +311,14 @@ const Resume = () => {
                                         return (
                                             <li
                                                 key={index}
-                                                className="flex items-center justify-center xl:justify-start gap-4"
+                                                className="flex items-start gap-4"
                                             >
                                                 <span className="text-white/60">{item.filedName}</span>
-                                                <span className="text-md">{item.fieldvalue}</span>
+                                                <div className="md:flex md:flex-wrap md:gap-2 lg:gap-none lg:flex-nowrap">
+                                                    {item.fieldvalue.split(",").map((value, i) => (
+                                                        <span key={i} className="text-md w-full">{value}</span>
+                                                    ))}
+                                                </div>
                                             </li>
                                         );
                                     })}

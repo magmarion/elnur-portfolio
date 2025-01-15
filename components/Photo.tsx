@@ -29,9 +29,11 @@ const Photo = () => {
                 >
                     <Image
                         src="/assets/photo.png"
-                        priority
                         quality={100}
                         fill
+                        sizes="(max-width: 768px) 100vw, 
+                                (max-width: 1200px) 50vw, 
+                                33vw"
                         alt=""
                         className="object-contain"
                     />
