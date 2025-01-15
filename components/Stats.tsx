@@ -34,9 +34,9 @@ const Stats = () => {
                         duration: 0.5,
                         ease: "easeIn"
                     }}
-                    className="flex flex-wrap gap-6 max-w-[80vw] mx-auto xl:max-w-none"
+                    className="grid gap-6 mx-auto max-w-[80vw] xl:max-w-none
+                    grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 lg:gap-10"
                 >
-
                     {stats.map((item, index) => {
                         return (
                             <div
@@ -44,15 +44,13 @@ const Stats = () => {
                                 xl:justify-start"
                                 key={index}
                             >
-
                                 <CountUp
                                     end={item.num}
                                     duration={5}
                                     delay={3}
                                     className="text-4xl xl:text-6xl font-extrabold text-accent"
                                 />
-                                <p className={`${item.text.length > 15 ? "max-w-[100px]" : "max-w-[150px]"
-                                    } leading-snug text-white/80`}
+                                <p className={`${item.text.length > 10 ? "max-w-[100px]" : "max-w-[150px]"} leading-snug text-white/80`}
                                 >
                                     {item.text}
                                 </p>

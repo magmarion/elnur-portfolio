@@ -60,7 +60,7 @@ const MobileNav = () => {
             </SheetTrigger>
             <SheetContent className="flex flex-col">
 
-                <div className="mt-32 mb-40 text-center text-2xl">
+                <div className="mt-20 mb-20 text-center text-2xl">
                     {/* by using preventDefault(), the menu will be closed when the logo is clicked, 
                     but the link will not be followed. */}
                     <Link href="/" onClick={(e) => {

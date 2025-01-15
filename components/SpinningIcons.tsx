@@ -27,26 +27,26 @@ const SpinningIcons = () => {
 
     return (
         <motion.div
-            initial={{ opacity: 0, rotate: 0 }} // Startar osynligt och utan rotation
-            animate={{ opacity: 1, rotate: 360 }} // Ökar synligheten och börjar rotera
+            initial={{ opacity: 0, rotate: 0 }}
+            animate={{ opacity: 1, rotate: 360 }}
             transition={{
-                opacity: { delay: 2.4, duration: 0.5 }, // Gör den synlig efter 2.4s
+                opacity: { delay: 2.4, duration: 0.5 }, 
                 rotate: {
                     delay: 2.4,
-                    duration: 5,
+                    duration: 10,
                     ease: "linear",
                     repeat: Infinity
-                }, // Startar rotationen efter 2.4s
+                }, // Start the rotation after 2.4s
             }}
-            className="relative w-[120px] h-[120px] mx-auto xl:w-[200px] xl:h-[200px] 
-            mb-12 mt-20 xl:mb-0 xl:mt-0"
+            className="relative w-[120px] h-[120px] mx-auto 
+            xl:w-[200px] xl:h-[200px] mb-12 mt-28 xl:mb-0 xl:mt-0"
         >
             {/* Image placed in the center */}
             <div
                 className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
                 style={{
-                    width: '120%',  // Responsiv storlek för att passa in i den roterande cirkeln
-                    height: '120%', // Responsiv höjd
+                    width: '120%',  // Responsive size to fit inside the rotating circle
+                    height: '120%', // Responsive size for the height
                     maxWidth: "270px",
                     maxHeight: "278px",
                     transformOrigin: "center",
