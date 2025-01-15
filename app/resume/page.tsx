@@ -15,11 +15,11 @@ const about = {
         },
         {
             filedName: "Phone",
-            fieldvalue: "(+46) xxxxxxxxx",
+            fieldvalue: "(+46) xxx-xxx-xxx",
         },
         {
             filedName: "Email",
-            fieldvalue: "elnur@example.com",
+            fieldvalue: "Elnur.Guliyev@medieinstitutet.se ",
         },
         {
             filedName: "Experience",
@@ -306,18 +306,21 @@ const Resume = () => {
                             <div className="flex flex-col gap-[30px]">
                                 <h3 className="text-4xl font-bold">{about.title}</h3>
                                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{about.description}</p>
-                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 gap-x-16 max-w-3xl mx-auto xl:mx-0">
                                     {about.info.map((item, index) => {
                                         return (
                                             <li
                                                 key={index}
                                                 className="flex items-start gap-4"
                                             >
-                                                <span className="text-white/60">{item.filedName}</span>
-                                                <div className="md:flex md:flex-wrap md:gap-2 lg:gap-none lg:flex-nowrap">
-                                                    {item.fieldvalue.split(",").map((value, i) => (
-                                                        <span key={i} className="text-md w-full">{value}</span>
-                                                    ))}
+                                                <div className="flex flex-col gap-2 w-full md:flex-row md:gap-4 items-start">
+
+                                                    <span className="text-white/60 flex-shrink-0">{item.filedName}</span>
+                                                    <div className="md:flex md:flex-wrap gap-2">
+                                                        {item.fieldvalue.split(",").map((value, i) => (
+                                                            <span key={i} className="text-md block md:inline">{value}</span>
+                                                        ))}
+                                                    </div>
                                                 </div>
                                             </li>
                                         );
