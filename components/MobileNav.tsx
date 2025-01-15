@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 import { useState } from "react";
 import Link from "next/link";
 
-import { GiTigerHead } from "react-icons/gi";
+import { FaGlideG } from "react-icons/fa";
 import { AiFillHome } from "react-icons/ai";
 import { FaLaptopCode, FaFileAlt, FaProjectDiagram, FaEnvelope } from "react-icons/fa";
 
@@ -68,7 +68,7 @@ const MobileNav = () => {
                         toggleMenu()
                     }}>
                         <h1 className="text-4xl font-semibold flex justify-center gap-2">
-                            Elnur {<GiTigerHead className="text-accent pb-1" />}
+                            Elnur. <FaGlideG className="text-accent ml-[-10px] mt-2" />
                         </h1>
                     </Link>
                 </div>
