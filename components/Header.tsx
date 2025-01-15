@@ -4,6 +4,8 @@ import Link from "next/link";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 import Photo from "./Photo";
+import { FaGlideG } from "react-icons/fa";
+
 const Header = () => {
     return (
         <header className="py-8 xl:py-12 text-white">
@@ -11,7 +13,7 @@ const Header = () => {
                 {/* Logo */}
                 <Link href="/">
                     <h1 className="text-4xl font-semibold flex items-center gap-2">
-                        Elnur <Photo /> </h1>
+                        Elnur. <span> <FaGlideG className="text-accent ml-[-10px] mt-2" /> </span> <Photo /> </h1>
                 </Link>
 
                 {/* desktop nav and hire me button */}
