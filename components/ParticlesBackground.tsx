@@ -10,13 +10,13 @@ const ParticlesBackground = () => {
             particlesJS.init({
                 selector: ".background",
                 maxParticles: 100,
-                color: ['#ffffff'], // Multicolor particles
+                color: ['#ffffff', '#00ff00', "#ff0000"], // Multicolor particles
                 connectParticles: false,
             });
         }
     }, []);
 
-    return <canvas className="absolute top-0 left-0 w-full h-full -z-10 opacity-70  pointer-events-none background" />;
+    return <canvas className="absolute top-0 left-0 w-full h-full -z-10 pointer-events-none background" />;
 };
 
 export default ParticlesBackground;
