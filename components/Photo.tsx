@@ -28,7 +28,7 @@ const Photo = () => {
                     mix-blend-lighten absolute"
                 >
                     <Image
-                        src="/assets/photo.png"
+                        src="/assets/my-photo.png"
                         quality={100}
                         fill
                         sizes="(max-width: 768px) 100vw, 
@@ -50,8 +50,8 @@ const Photo = () => {
                         cx="253"
                         cy="253"
                         r="250"
-                        stroke="#00ff99"
-                        strokeWidth="10"
+                        stroke="#7a9331"
+                        strokeWidth="20"
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         initial={{ strokeDasharray: "24 10 0 0" }}
