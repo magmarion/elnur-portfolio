@@ -1,3 +1,6 @@
+import React from "react";
+import ParticlesBackground from "@/components/ParticlesBackground";
+
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
@@ -5,7 +8,7 @@ import "./globals.css";
 // components import
 import Header from "@/components/Header";
 import PageTransition from "@/components/PageTransition";
-import StairTransition from "@/components/StairTransition";
+import FlipTransition from "@/components/FlipTransition";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin"],
@@ -34,13 +37,18 @@ null, undefined, false (which means nothing is rendered)
 Using React.ReactNode ensures that the children prop can accept any valid React child element.
 
 */
+
+
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode; }>) {
   return (
     <html lang="en">
-      <body className={`${jetbrainsMono.variable}`}>
-        <Header />
-        <StairTransition />
-        <PageTransition>{children}</PageTransition>
+      <body className={`${jetbrainsMono.variable} relative`}>
+        <ParticlesBackground />
+        <div className="relative z-10">
+          <Header />
+          <FlipTransition />
+          <PageTransition>{children}</PageTransition>
+        </div>
 
       </body>
     </html>
