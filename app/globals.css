@@ -5,6 +5,7 @@
 
 @layer base {
   body {
+    /* using the pitch black for the background instead of bg-primary */
     @apply font-primary bg-primary text-white leading-loose;
   }
 
@@ -25,6 +26,6 @@
   }
   
   .text-outline-hover {
-    -webkit-text-stroke: 1px #00ff99;
+    -webkit-text-stroke: 1px #658525;
   }
 }

@@ -23,11 +23,11 @@ const config: Config = {
     },
     extend: {
       colors: {
-        primary: "#1c1c22",
+        primary: "#1D1616",
         accent: {
           // custom colors
-          DEFAULT: "#00ff99",
-          hover: "#00e187",
+          DEFAULT: "#7a9331",
+          hover: "#658525",
         },
       },
       keyframes: {
