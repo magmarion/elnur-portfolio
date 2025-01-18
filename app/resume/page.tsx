@@ -212,7 +212,7 @@ const Resume = () => {
                                             return (
                                                 <li
                                                     key={index}
-                                                    className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl 
+                                                    className="bg-[#171212] h-[184px] py-6 px-10 rounded-xl 
                                                     flex flex-col justify-center items-center lg:items-start gap-1"
                                                 >
                                                     <span className="text-accent">{item.duration}</span>
@@ -245,7 +245,7 @@ const Resume = () => {
                                             return (
                                                 <li
                                                     key={index}
-                                                    className="bg-[#232329] h-[184px] py-2 px-10 rounded-xl 
+                                                    className="bg-[#171212] h-[184px] py-2 px-10 rounded-xl 
                                                     flex flex-col justify-center items-center lg:items-start gap-1"
                                                 >
                                                     <span className="text-accent">{item.duration}</span>
@@ -285,7 +285,7 @@ const Resume = () => {
                                                     {/* The container for the tooltip logic. Wraps the trigger and content components. */}
                                                     <Tooltip>
                                                         {/* The element that triggers the tooltip to show when hovered or focused. */}
-                                                        <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
+                                                        <TooltipTrigger className="w-full h-[150px] bg-[#171212] rounded-xl flex justify-center items-center group">
                                                             <div className="text-6xl group-hover:text-accent transition-all duration-300">{skill.icon}</div>
                                                         </TooltipTrigger>
                                                         {/* Defines the content that appears in the tooltip when triggered. */}
