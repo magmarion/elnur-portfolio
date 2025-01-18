@@ -10,7 +10,7 @@ const ParticlesBackground = () => {
             particlesJS.init({
                 selector: ".background",
                 maxParticles: 100,
-                color: ['#ffffff', '#00ff00', "#ff0000"], // Multicolor particles
+                color: ['#ffffff', '#00ff00', "#ff0000"],
                 connectParticles: false,
             });
         }

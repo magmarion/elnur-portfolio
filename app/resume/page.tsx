@@ -14,20 +14,16 @@ const about = {
             fieldvalue: "Elnur Guliyev",
         },
         {
-            filedName: "Phone",
-            fieldvalue: "(+46) xxx-xxx-xxx",
-        },
-        {
             filedName: "Email",
             fieldvalue: "Elnur.Guliyev@medieinstitutet.se ",
         },
         {
             filedName: "Experience",
-            fieldvalue: "1+ Years",
+            fieldvalue: "Emerging...",
         },
         {
             filedName: "Nationality",
-            fieldvalue: "Azerbaijan",
+            fieldvalue: "Azerbaijani/Swedish",
         },
         {
             filedName: "Languages",
