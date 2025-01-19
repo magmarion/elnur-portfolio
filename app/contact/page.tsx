@@ -38,10 +38,9 @@ const Contact = () => {
                     <form className="flex flex-col gap-6 p-10 bg-[#171212] rounded-xl">
                         <h3 className="text-4xl text-accent">Let's work together</h3>
                         <p className="text-white/60">
-                            I'm a passionate front-end developer with experience in creating visually appealing,
-                            responsive, and user-friendly websites. Whether you need a simple landing page or a full-fledged web application,
-                            I'm here to help turn your ideas into reality.
-                            I work closely with clients to ensure that the final product meets your business goals and user needs..
+                            Experienced front-end developer focused on creating responsive, visually appealing,
+                            and user-friendly websites. Skilled in transforming ideas into functional solutions
+                            that align with business goals and user requirements.
                         </p>
                         {/* input */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

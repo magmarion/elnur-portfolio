@@ -3,45 +3,13 @@
 import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaNpm, FaGitAlt, FaGithub } from "react-icons/fa";
 import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
 
-// about data
-const about = {
-    title: "About Me",
-    description:
-        "Feel free to reach out for collaboration or inquiries. Below are my contact details.",
-    info: [
-        {
-            filedName: "Name",
-            fieldvalue: "Elnur Guliyev",
-        },
-        {
-            filedName: "Email",
-            fieldvalue: "Elnur.Guliyev@medieinstitutet.se ",
-        },
-        {
-            filedName: "Experience",
-            fieldvalue: "Emerging...",
-        },
-        {
-            filedName: "Nationality",
-            fieldvalue: "Azerbaijani/Swedish",
-        },
-        {
-            filedName: "Languages",
-            fieldvalue: "Azerbaijani, Turkish, English, Swedish",
-        },
-        {
-            filedName: "Freelance",
-            fieldvalue: "Available",
-        },
-    ]
-};
-
 // experience data
 const experience = {
     icon: "/",
     title: "My experience",
     description:
-        "Collaborated with cross-functional teams on various projects, successfully launching responsive websites and applications that meet user needs and business goals.",
+    `Collaborated with cross-functional teams on various projects,
+    contributing to effective communication, task coordination, and achieving shared objectives.`,
     items: [
         {
             company: "Volvo Cars",
@@ -76,9 +44,8 @@ const education = {
     icon: "/",
     title: "My education",
     description:
-        `I am currently pursuing a degree in Front-End Development and Web Programming at Medieinstitutet.
-        Prior to this, I undertook one year of study in Information Technology at Jönköping University and
-        completed my high school education with a focus on IT at the International IT College of Sweden.`,
+    `Currently studying Front-End Development and Web Programming at Medieinstitutet,
+    with prior studies in Information Technology at Jönköping University and IT-focused high school education.`,
     items: [
         {
             institution: "Medieinstitutet",
@@ -100,7 +67,7 @@ const education = {
             degree: "High School Diploma",
             duration: "2017 - 2019",
         },
-
+        
     ],
 };
 
@@ -108,19 +75,20 @@ const education = {
 const skills = {
     title: "My skills",
     description:
-        `Skilled in web development with expertise in HTML, CSS, JavaScript, and front-end frameworks.
-        Continuously improving in software development and UI/UX design`,
+    `Skilled in foundational technologies to build modern, user-focused websites,
+    including HTML, CSS, and JavaScript. Committed to continuous learning and improvement,
+    exploring new tools and frameworks to stay aligned with advancements in the field.`,
     skillList: [
         {
             icon: <FaHtml5 />,
             name: "HTML5",
         },
-
+        
         {
             icon: <FaCss3 />,
             name: "CSS3",
         },
-
+        
         {
             icon: <FaJs />,
             name: "JavaSript",
@@ -164,6 +132,41 @@ const skills = {
             name: "GitHub",
         },
     ],
+};
+
+// about data
+const about = {
+    title: "About Me",
+    description:
+        `Feel free to reach out for collaboration or inquiries.
+        Below are my contact details. Most easily reached by email.
+        Also, you can find me on LinkedIn and GitHub.`,
+    info: [
+        {
+            filedName: "Name",
+            fieldvalue: "Elnur Guliyev",
+        },
+        {
+            filedName: "Email",
+            fieldvalue: "Elnur.Guliyev@medieinstitutet.se ",
+        },
+        {
+            filedName: "Experience",
+            fieldvalue: "Emerging...",
+        },
+        {
+            filedName: "Nationality",
+            fieldvalue: "Azerbaijani/Swedish",
+        },
+        {
+            filedName: "Languages",
+            fieldvalue: "Azerbaijani, Turkish, English, Swedish",
+        },
+        {
+            filedName: "Freelance",
+            fieldvalue: "Available",
+        },
+    ]
 };
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
