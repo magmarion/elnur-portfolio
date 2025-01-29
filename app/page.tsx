@@ -26,9 +26,12 @@ const Home = () => {
                             Hello I'm <br /> <span className="text-accent">Elnur Guliyev</span>
                         </h1>
                         <p className="max-w-[500px] mb-9 text-white/80">
-                            I’m a Front-End Developer passionate about creating seamless user experiences.
-                            Skilled in HTML, CSS, JavaScript, React, and Next.js, I turn designs into clean, scalable code.
-                            I enjoy learning, problem-solving, and building web solutions that users love.
+                            I’m a Front-End Developer with a strong focus on Backend development,
+                            passionate about creating seamless and intuitive user experiences.
+                            Skilled in HTML, CSS, JavaScript, React, and Next.js,
+                            I specialize in turning designs into clean, efficient, and scalable code.
+                            I thrive on learning, solving complex problems,
+                            and building web solutions that resonate with users.
                             <span className="block mt-4">Let’s build something amazing together!</span>
                         </p>
                         {/* btn and socials */}
