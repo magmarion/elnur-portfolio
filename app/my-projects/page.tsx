@@ -19,6 +19,30 @@ import ProjectSliderBtns from "@/components/ProjectSliderBtns";
 const projects = [
     {
         num: "01",
+        category: "JavaScript Game",
+        description: `A text-based adventure game where players explore a cave, interact with characters and objects,
+                    and search for a legendary treasure. The game includes an inventory system, dynamic scenes, 
+                    and multiple endings based on player decisions.`,
+        stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
+        image: "/assets/projectDemo/Frame3.png",
+        github: "https://github.com/elnurguliy/FirstGame",
+        demo: "https://elnurguliy.github.io/FirstGame/",
+    },
+    {
+        num: "02",
+        category: "P5.js Game",
+        description: `A retro-inspired game drawing inspiration from classics like Snake, Tetris, and Mario,
+        designed using p5.js and TypeScript with OOP principles. Developed by a team of four,
+        the game is exclusively two-player, offering a progression from easy to challenging levels.
+        With its stunning visuals, immersive background music, and dynamic sound effects,
+        the experience is elevated to a whole new level.`,
+        stack: [{ name: "TypeScript [OOP]" }, { name: "P5.js" }],
+        image: "/assets/projectDemo/Frame4.png",
+        github: "https://github.com/elnurguliy/oop_p5_game.git",
+        demo: "https://oop-p5-game.vercel.app/",
+    },
+    {
+        num: "03",
         category: "Frontend",
         description: "A sleek and minimalist website designed with responsive HTML5 and CSS3, ensuring a seamless user experience across all devices.",
         stack: [{ name: "Html 5" }, { name: "Css 3" }],
@@ -27,24 +51,13 @@ const projects = [
         demo: "https://elnurguliy.github.io/html-css-website/",
     },
     {
-        num: "02",
+        num: "04",
         category: "UX/UI",
         description: "The objective of this project was to redesign an existing website with a focus on enhancing its accessibility.",
         stack: [{ name: "Figma" }, { name: "Lighthouse" }, { name: "Wcag" }],
         image: "/assets/projectDemo/Frame2.png",
         github: null,
         demo: "https://www.figma.com/proto/bHFqC4WRSE4Nospg5A7mVd/Bokus?node-id=177-686&p=f&t=kqq3op6OyOabOhVU-0&scaling=scale-down&content-scaling=fixed&page-id=176%3A12&starting-point-node-id=177%3A686",
-    },
-    {
-        num: "03",
-        category: "Game",
-        description: `A text-based adventure game where players explore a cave, interact with characters and objects,
-                    and search for a legendary treasure. The game includes an inventory system, dynamic scenes, 
-                    and multiple endings based on player decisions.`,
-        stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
-        image: "/assets/projectDemo/Frame3.png",
-        github: "https://github.com/elnurguliy/FirstGame",
-        demo: "https://elnurguliy.github.io/FirstGame/",
     },
 ]
 
@@ -145,14 +158,14 @@ const Project = () => {
                         <Swiper
                             spaceBetween={30}
                             slidesPerView={1}
-                            className="xl:h-[520px] mb-12"
+                            className="xl:h-[520px] mb-12 rounded-xl"
                             onSlideChange={handleSlideChange}
                         >
                             {projects.map((project, index) => {
                                 return (
                                     <SwiperSlide key={index} className="w-full">
                                         <div className="h-[460px] rounded-md relative group flex justify-center
-                                        items-center bg-pink-50/20 ">
+                                        items-center bg-pink-50/20">
                                             {/* overlay */}
                                             <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                                             {/* image */}
