@@ -23,7 +23,7 @@ const Home = () => {
                     <div className="text-center xl:text-left order-2 xl:order-none">
                         <span>Front-End Developer</span>
                         <h1 className="h1 mb-6 text-5xl">
-                            Hello I'm <br /> <span className="text-accent">Elnur Guliyev</span>
+                            Hello It's  <span className="text-accent">Elnur</span>
                         </h1>
                         <p className="max-w-[500px] mb-9 text-white/80">
                             I’m a Front-End Developer with a strong focus on Backend development,
