@@ -12,7 +12,7 @@ const Social = ({ containerStyles, iconStyles }: { containerStyles: string, icon
         <div className={containerStyles}>
             {socials.map((item, index) => {
                 return (
-                    <Link key={index} href={item.path} target="_blank" className={iconStyles}>
+                    <Link key={index} href={item.path} target="_blank" className={iconStyles} aria-label="social-links">
                         {item.icon}
                     </Link>
                 );

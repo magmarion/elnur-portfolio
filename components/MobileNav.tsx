@@ -54,7 +54,7 @@ const MobileNav = () => {
     return (
         // onOpenChange is used to open and close the menu using X button and clicking anywhere outside of the Sheet
         <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger onClick={toggleMenu} className="flex justify-center items-center">
+            <SheetTrigger onClick={toggleMenu} className="flex justify-center items-center" aria-label="mobile-menu">
                 <CiMenuFries className="text-[32px] text-accent" />
             </SheetTrigger>
             <SheetContent className="flex flex-col">
