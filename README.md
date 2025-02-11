@@ -1,6 +1,6 @@
 # 🚀 **Personal Portfolio**  
 
-🌐 **[View Live Project](https://elnur-portfolio.vercel.app/)**  
+🌐 **[View Live Project](https://www.elnurguliyev.se/)**  
 
 Welcome to my personal portfolio! This project showcases my skills, projects, and experiences as a developer. Built with cutting-edge technologies, this portfolio reflects my passion for creating modern, responsive, and user-friendly web applications.  
 
