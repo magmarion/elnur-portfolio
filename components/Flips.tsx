@@ -70,7 +70,7 @@ const Flips = () => {
     return (
         <>
             <motion.div
-                className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#362C2C]"
+                className="fixed top-0 bottom-0 right-full w-screen h-screen z-30 bg-[#1A1A1D]"
                 variants={transitionVariants}
                 initial="initial"
                 animate="animate"
@@ -80,7 +80,7 @@ const Flips = () => {
                 }}
             ></motion.div>
             <motion.div
-                className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#242020]"
+                className="fixed top-0 bottom-0 right-full w-screen h-screen z-20 bg-[#151515]"
                 variants={transitionVariants}
                 initial="initial"
                 animate="animate"
@@ -90,7 +90,7 @@ const Flips = () => {
                 }}
             ></motion.div>
             <motion.div
-                className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#362C2C]"
+                className="fixed top-0 bottom-0 right-full w-screen h-screen z-10 bg-[#1A1A1D]"
                 variants={transitionVariants}
                 initial="initial"
                 animate="animate"
