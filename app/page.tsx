@@ -1,11 +1,3 @@
-
-// import { Button } from "@/components/ui/button";
-// import { FiDownload } from "react-icons/fi";
-
-// import { GiTigerHead } from "react-icons/gi";
-// import { FaWolfPackBattalion } from "react-icons/fa";
-// import { SiCodingninjas } from "react-icons/si";
-
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 

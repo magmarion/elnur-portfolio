@@ -24,7 +24,7 @@ const stats = [
 
 const Stats = () => {
     return (
-        <section className="pt-4 pb-12 xl:pt-0 xl:pb-12">
+        <section className="pt-4 pb-4 xl:pt-0 xl:pb-12">
             <div className="container mx-auto">
                 <motion.div
                     initial={{ opacity: 0 }} // Startar osynligt
