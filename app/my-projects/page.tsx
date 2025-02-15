@@ -25,8 +25,8 @@ const projects = [
                     and multiple endings based on player decisions.`,
         stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "JavaScript" }],
         image: "/assets/projectDemo/Frame3.png",
-        github: "https://github.com/elnurguliy/FirstGame",
-        demo: "https://elnurguliy.github.io/FirstGame/",
+        github: "https://github.com/magmarion/FirstGame",
+        demo: "https://magmarion.github.io/FirstGame/",
     },
     {
         num: "02",
@@ -38,8 +38,8 @@ const projects = [
         the experience is elevated to a whole new level.`,
         stack: [{ name: "TypeScript [OOP]" }, { name: "P5.js" }],
         image: "/assets/projectDemo/Frame4.png",
-        github: "https://github.com/elnurguliy/oop_p5_game.git",
-        demo: "https://oop-p5-game.vercel.app/",
+        github: "https://github.com/magmarion/oop_p5_game",
+        demo: "https://oop-p5-game.vercel.app",
     },
     {
         num: "03",
@@ -47,8 +47,8 @@ const projects = [
         description: "A sleek and minimalist website designed with responsive HTML5 and CSS3, ensuring a seamless user experience across all devices.",
         stack: [{ name: "Html 5" }, { name: "Css 3" }],
         image: "/assets/projectDemo/Frame1.png",
-        github: "https://github.com/elnurguliy/html-css-website.git",
-        demo: "https://elnurguliy.github.io/html-css-website/",
+        github: "https://github.com/magmarion/html-css-website",
+        demo: "https://magmarion.github.io/html-css-website/",
     },
     {
         num: "04",
