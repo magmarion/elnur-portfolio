@@ -1,10 +1,25 @@
+"use client";
 import Social from "@/components/Social";
 import Stats from "@/components/Stats";
 
 import SpinningIcons from "@/components/SpinningIcons";
+import { useEffect } from "react";
 
 
 const Home = () => {
+    useEffect(() => {
+        const handleCopy = (event: ClipboardEvent) => {
+            event.preventDefault();
+            alert("Stop stealing my content!");
+        };
+
+        document.addEventListener("copy", handleCopy);
+
+        return () => {
+            document.removeEventListener("copy", handleCopy);
+        };
+    }, []);
+
     return (
         <section className="h-full">
             <div className="container mx-auto h-full">
