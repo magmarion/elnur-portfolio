@@ -33,9 +33,7 @@ const projects = [
         category: "P5.js Game",
         description: `A retro-inspired game drawing inspiration from classics like Snake, Tetris, and Mario,
         designed using p5.js and TypeScript with OOP principles. Developed by a team of four,
-        the game is exclusively two-player, offering a progression from easy to challenging levels.
-        With its stunning visuals, immersive background music, and dynamic sound effects,
-        the experience is elevated to a whole new level.`,
+        the game is exclusively two-player, offering a progression from easy to challenging levels.`,
         stack: [{ name: "TypeScript [OOP]" }, { name: "P5.js" }],
         image: "/assets/projectDemo/Frame4.png",
         github: "https://github.com/magmarion/oop_p5_game",
