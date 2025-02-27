@@ -29,7 +29,7 @@ const Photo = () => {
                 >
                     <Image
                         src="/assets/my-photo.png"
-                        quality={100}
+                        quality={80}
                         fill
                         sizes="(max-width: 768px) 100vw, 
                                 (max-width: 1200px) 50vw, 
