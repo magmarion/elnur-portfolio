@@ -19,6 +19,15 @@ import ProjectSliderBtns from "@/components/ProjectSliderBtns";
 const projects = [
     {
         num: "01",
+        category: "React Quiz",
+        description: `Dynamic and engaging quiz app built with React and styled using Emotion CSS (CSS-in-JS). The quiz questions are fetched from a custom-built API powered by JSON documents, ensuring a seamless and responsive experience`,
+        stack: [{ name: "React" }, { name: "Emotion CSS" }, { name: "Custom API" }],
+        image: "/assets/projectDemo/Frame5.png",
+        github: "https://github.com/magmarion/react-quiz-app",
+        demo: "https://mint-quiz-app.vercel.app/",
+    },
+    {
+        num: "02",
         category: "JavaScript Game",
         description: `A text-based adventure game where players explore a cave, interact with characters and objects,
                     and search for a legendary treasure. The game includes an inventory system, dynamic scenes, 
@@ -29,7 +38,7 @@ const projects = [
         demo: "https://magmarion.github.io/FirstGame/",
     },
     {
-        num: "02",
+        num: "03",
         category: "P5.js Game",
         description: `A retro-inspired game drawing inspiration from classics like Snake, Tetris, and Mario,
         designed using p5.js and TypeScript with OOP principles. Developed by a team of four,
@@ -40,7 +49,7 @@ const projects = [
         demo: "https://oop-p5-game.vercel.app",
     },
     {
-        num: "03",
+        num: "04",
         category: "Frontend",
         description: "A sleek and minimalist website designed with responsive HTML5 and CSS3, ensuring a seamless user experience across all devices.",
         stack: [{ name: "Html 5" }, { name: "Css 3" }],
@@ -49,7 +58,7 @@ const projects = [
         demo: "https://magmarion.github.io/html-css-website/",
     },
     {
-        num: "04",
+        num: "05",
         category: "UX/UI",
         description: "The objective of this project was to redesign an existing website with a focus on enhancing its accessibility.",
         stack: [{ name: "Figma" }, { name: "Lighthouse" }, { name: "Wcag" }],
