@@ -20,7 +20,7 @@ const projects = [
     {
         num: "01",
         category: "React Quiz",
-        description: `Dynamic and engaging quiz app built with React and styled using Emotion CSS (CSS-in-JS). The quiz questions are fetched from a custom-built API powered by JSON documents, ensuring a seamless and responsive experience`,
+        description: `Dynamic and engaging quiz app built with React and styled using Emotion CSS (CSS-in-JS). The quiz questions are fetched from a custom-built API powered by JSON documents, ensuring a seamless and responsive experience.`,
         stack: [{ name: "React" }, { name: "Emotion CSS" }, { name: "Custom API" }],
         image: "/assets/projectDemo/Frame5.png",
         github: "https://github.com/magmarion/react-quiz-app",
@@ -128,7 +128,7 @@ const Project = () => {
                                                 <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
                                             </TooltipTrigger>
                                             <TooltipContent>
-                                                <p>Demo project</p>
+                                                <p>Live project</p>
                                             </TooltipContent>
                                         </Tooltip>
                                     </TooltipProvider>
