@@ -1,20 +1,20 @@
 "use client";
 
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import { useState } from "react";
 
 // swiper install: npm i swiper
-import { Swiper, SwiperSlide } from "swiper/react";
 import { Swiper as SwiperType } from "swiper"; // Swiper as type for instance
 import "swiper/css";
+import { Swiper, SwiperSlide } from "swiper/react";
 
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from '@/components/ui/tooltip';
 
-import Link from "next/link";
-import Image from "next/image";
 import ProjectSliderBtns from "@/components/ProjectSliderBtns";
+import Image from "next/image";
+import Link from "next/link";
 
 const projects = [
     {
@@ -40,8 +40,7 @@ const projects = [
     {
         num: "03",
         category: "P5.js Game",
-        description: `A retro-inspired game drawing inspiration from classics like Snake, Tetris, and Mario,
-        designed using p5.js and TypeScript with OOP principles. Developed by a team of four,
+        description: `A retro-inspired game drawing inspiration from classics like Snake, Tetris, and Mario, designed using p5.js and TypeScript with OOP principles. Developed by a team of four,
         the game is exclusively two-player, offering a progression from easy to challenging levels.`,
         stack: [{ name: "TypeScript [OOP]" }, { name: "P5.js" }],
         image: "/assets/projectDemo/Frame4.png",
@@ -50,6 +49,15 @@ const projects = [
     },
     {
         num: "04",
+        category: "E-commerce",
+        description: `A modern e-commerce platform built with Next.js and Tailwind CSS, featuring a sleek and responsive UI powered by ShadCN and Framer Motion for smooth animations. State management is handled with Zustand, while Prisma and Zod ensure robust backend data validation and management.`,
+        stack: [{ name: "Next.js" }, { name: "Tailwind CSS" }, { name: "ShadCN" }, { name: "Framer" }, { name: "Zustand" }, { name: "Prisma" }, { name: "Zod" }],
+        image: "/assets/projectDemo/Frame6.png",
+        github: "https://github.com/plugga-tech/nextjs-webshop-ts-react-theshop",
+        demo: null,
+    },
+    {
+        num: "05",
         category: "Frontend",
         description: "A sleek and minimalist website designed with responsive HTML5 and CSS3, ensuring a seamless user experience across all devices.",
         stack: [{ name: "Html 5" }, { name: "Css 3" }],
@@ -58,7 +66,7 @@ const projects = [
         demo: "https://magmarion.github.io/html-css-website/",
     },
     {
-        num: "05",
+        num: "06",
         category: "UX/UI",
         description: "The objective of this project was to redesign an existing website with a focus on enhancing its accessibility.",
         stack: [{ name: "Figma" }, { name: "Lighthouse" }, { name: "Wcag" }],
@@ -104,7 +112,7 @@ const Project = () => {
                             {/* project description */}
                             <p className="text-white/60">{project.description}</p>
                             {/* project stack */}
-                            <ul className="flex gap-4">
+                            <ul className="flex flex-wrap gap-4 max-w-full">
                                 {project.stack.map((stackItem, index) => {
                                     return (
                                         <li key={index} className="text-xl text-accent">
@@ -119,20 +127,30 @@ const Project = () => {
                             <div className="border border-white/20"></div>
                             {/* buttons */}
                             <div className="flex items-center gap-4">
+                                
                                 {/* live project button */}
-                                <Link href={project.demo} target="_blank">
-                                    <TooltipProvider delayDuration={100}>
-                                        <Tooltip>
-                                            <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5
+                                {/* Conditional Rendering: The Link component is only rendered if project.github contains a valid URL. If project.github is null, we render a placeholder div instead.
+                                    Fallback Element: If project.github is null, we display a gray icon inside a div, which acts as a disabled button and prevents any errors from being thrown.
+                                    No Error: Since we only pass a valid URL to the href attribute, the TypeScript error is avoided. */}
+                                {project.demo ? (
+                                    < Link href={project.demo} target="_blank">
+                                        <TooltipProvider delayDuration={100}>
+                                            <Tooltip>
+                                                <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5
                                             flex justify-center items-center group bg-[#171212]">
-                                                <BsArrowUpRight className="text-white text-3xl group-hover:text-accent" />
-                                            </TooltipTrigger>
-                                            <TooltipContent>
-                                                <p>Live project</p>
-                                            </TooltipContent>
-                                        </Tooltip>
-                                    </TooltipProvider>
-                                </Link>
+                                                    <BsGithub className="text-white text-3xl group-hover:text-accent" />
+                                                </TooltipTrigger>
+                                                <TooltipContent>
+                                                    <p>Github repository</p>
+                                                </TooltipContent>
+                                            </Tooltip>
+                                        </TooltipProvider>
+                                    </Link>
+                                ) : (
+                                    <div className="w-[70px] h-[70px] rounded-full bg-gray-700 flex justify-center items-center">
+                                        <BsArrowUpRight className="text-gray-500 text-3xl" />
+                                    </div>
+                                )}
 
                                 {/* github project button */}
                                 {/* Conditional Rendering: The Link component is only rendered if project.github contains a valid URL. If project.github is null, we render a placeholder div instead.
