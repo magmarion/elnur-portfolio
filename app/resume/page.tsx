@@ -1,14 +1,14 @@
 "use client";
 
-import { FaHtml5, FaCss3, FaJs, FaReact, FaFigma, FaNodeJs, FaNpm, FaGitAlt, FaGithub } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
+import { FaCss3, FaFigma, FaGitAlt, FaGithub, FaHtml5, FaJs, FaNodeJs, FaNpm, FaReact } from "react-icons/fa";
+import { SiExpress, SiFramer, SiMongodb, SiNextdotjs, SiPrisma, SiShadcnui, SiTailwindcss, SiTypescript } from "react-icons/si";
 
 // experience data
 const experience = {
     icon: "/",
     title: "My experience",
     description:
-    `Collaborated with cross-functional teams on various projects,
+        `Collaborated with cross-functional teams on various projects,
     contributing to effective communication, task coordination, and achieving shared objectives.`,
     items: [
         {
@@ -44,7 +44,7 @@ const education = {
     icon: "/",
     title: "My education",
     description:
-    `Currently studying Front-End Development and Web Programming at Medieinstitutet,
+        `Currently studying Front-End Development and Web Programming at Medieinstitutet,
     with prior studies in Information Technology at Jönköping University and IT-focused high school education.`,
     items: [
         {
@@ -67,7 +67,7 @@ const education = {
             degree: "High School Diploma",
             duration: "2017 - 2019",
         },
-        
+
     ],
 };
 
@@ -75,7 +75,7 @@ const education = {
 const skills = {
     title: "My skills",
     description:
-    `Skilled in foundational technologies to build modern, user-focused websites,
+        `Skilled in foundational technologies to build modern, user-focused websites,
     including HTML, CSS, and JavaScript. Committed to continuous learning and improvement,
     exploring new tools and frameworks to stay aligned with advancements in the field.`,
     skillList: [
@@ -83,12 +83,10 @@ const skills = {
             icon: <FaHtml5 />,
             name: "HTML5",
         },
-        
         {
             icon: <FaCss3 />,
             name: "CSS3",
         },
-        
         {
             icon: <FaJs />,
             name: "JavaSript",
@@ -97,15 +95,9 @@ const skills = {
             icon: <SiTypescript />,
             name: "TypeSript",
         },
-
         {
             icon: <FaReact />,
             name: "React",
-        },
-
-        {
-            icon: <FaFigma />,
-            name: "Figma",
         },
         {
             icon: <SiNextdotjs />,
@@ -120,8 +112,24 @@ const skills = {
             name: "Node.js",
         },
         {
-            icon: <FaNpm />,
-            name: "npm",
+            icon: <SiPrisma />,
+            name: "Priisma",
+        },
+        {
+            icon: <SiExpress />,
+            name: "Express.js",
+        },
+        {
+            icon: <SiMongodb />,
+            name: "MongoDB",
+        },
+        {
+            icon: <SiFramer />,
+            name: "Framer Motion",
+        },
+        {
+            icon: <SiShadcnui />,
+            name: "Shadcn UI",
         },
         {
             icon: <FaGitAlt />,
@@ -130,6 +138,10 @@ const skills = {
         {
             icon: <FaGithub />,
             name: "GitHub",
+        },
+        {
+            icon: <FaFigma />,
+            name: "Figma",
         },
     ],
 };
@@ -169,9 +181,9 @@ const about = {
     ]
 };
 
+import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { motion } from "framer-motion";
 
 const Resume = () => {
